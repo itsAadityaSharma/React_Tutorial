@@ -21,5 +21,4 @@ function TodoItem({todoDate,todoName,handleDeleteButton}){
   </div>
 
 }
-
 export default TodoItem;
