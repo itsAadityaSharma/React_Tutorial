@@ -1,0 +1,22 @@
+h1{
+  font-weight: 900;
+  font-size: 500px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px;
+}
+
+input{
+  width: 100%;
+}
+
+.todo-item-container{
+  text-align: left;
+
+}
+
+.kg-row{
+  margin: 10px 5px;
+}
+.kg-button{
+  width: 80px;
+}
