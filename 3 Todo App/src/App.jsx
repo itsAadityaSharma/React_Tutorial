@@ -21,7 +21,6 @@ function App() {
   };
 
   const handleDeleteButton=(toItemName)=>{
-    console.log(`Item deleted ${toItemName}`);
     const newTodoItem=todoItemList.filter(item => item.name!==toItemName);
     setTodoItemList(newTodoItem);
   };

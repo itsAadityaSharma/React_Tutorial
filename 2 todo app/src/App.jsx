@@ -6,7 +6,7 @@ import "./App.css";
 import { useState } from 'react';
 import { MdFileDownload } from "react-icons/md";
 
- 
+
 function App() {
  
 
@@ -23,7 +23,6 @@ function App() {
   };
 
   const handleDeleteButton=(toItemName)=>{
-    console.log(`Item deleted ${toItemName}`);
     const newTodoItem=todoItemList.filter(item => item.name!==toItemName);
     setTodoItemList(newTodoItem);
   };
