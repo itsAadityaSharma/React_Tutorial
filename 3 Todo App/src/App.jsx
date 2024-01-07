@@ -34,6 +34,7 @@ function App() {
         itemDueDate
       }
     };
+    
     dispatchTodoItem(newItemAction);
   
     // let newTodoItems=[...todoItemList,{name:itemName,
