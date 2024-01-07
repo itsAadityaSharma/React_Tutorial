@@ -15,7 +15,7 @@ const todoItemReducer = (currTodoItems,action)=>{
       dueDate:action.payload.itemDueDate}];
   }
   else if(action.type==='DELETE_ITEM'){
-
+    newTodoItems=currTodoItems.filter(item => item.name!==action.payload.toItemName);
   }
   return newTodoItems;
 }
@@ -34,7 +34,7 @@ function App() {
         itemDueDate
       }
     };
-    
+
     dispatchTodoItem(newItemAction);
   
     // let newTodoItems=[...todoItemList,{name:itemName,
@@ -43,9 +43,18 @@ function App() {
 
   };
 
-  const handleDeleteButton=(toItemName)=>{
-    const newTodoItem=todoItemList.filter(item => item.name!==toItemName);
-    setTodoItemList(newTodoItem);
+  const handleDeleteButton=(toItemName,itemDueDate)=>{
+    // const newTodoItem=todoItemList.filter(item => item.name!==toItemName);
+
+    const deleteItemAction = {
+      type:"DELETE_ITEM",
+      payload:{
+        toItemName,
+        itemDueDate
+      }
+    };
+
+    dispatchTodoItem(deleteItemAction);
   };
 
   return(
