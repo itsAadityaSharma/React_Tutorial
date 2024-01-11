@@ -10,12 +10,12 @@ import PostList from './components/postList';
 //10:01:01
 function App() {
 
-  const [selectedTab, setSelected]=useState("Home");
+  const [selectedTab, setSelectedTab]=useState("Home");
 
   return (
     <>
     <div className="app">
-    <Sidebar selectedTab={selectedTab}></Sidebar>
+    <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab}></Sidebar>
 
     <div className='content'>
     <Header></Header>
