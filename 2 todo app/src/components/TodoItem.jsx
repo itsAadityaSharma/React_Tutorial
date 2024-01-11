@@ -2,7 +2,7 @@ import { MdDelete } from "react-icons/md";
 
 function TodoItem({todoDate,todoName,handleDeleteButton}){
 
-  return <div class="container">
+  return <div className="container">
     
   <div className="row kg-row">
     <div className="col-4">
