@@ -8,6 +8,7 @@ import CreatePost from './components/createPost';
 import Post from './components/post';
 import PostList from './components/postList';
 //10:28:57
+
 function App() {
 
   const [selectedTab, setSelectedTab]=useState("Home");
@@ -21,9 +22,6 @@ function App() {
     <Header></Header>
     {selectedTab === 'Home' && <PostList></PostList>}
     {selectedTab === 'Create' && <CreatePost></CreatePost>}
-
-    
-    
     <Footer></Footer>
     </div>
     </div>
